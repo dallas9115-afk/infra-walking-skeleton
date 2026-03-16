@@ -1,0 +1,47 @@
+# --- Security (CRITICAL) ---
+# AWS EC2 접속용 키 파일은 절대 깃허브에 올라가면 안 됩니다.
+*.pem
+*.ppk
+
+# --- Java & Gradle ---
+.gradle/
+build/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+
+# --- IntelliJ IDEA ---
+.idea/
+*.iws
+*.iml
+*.ipr
+/out/
+# 개인 설정 파일들 제외
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+
+# --- Docker ---
+# 로컬에서 생성된 도커 이미지 관련 임시 파일이나 로그
+*.tar
+*.tar.gz
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- STS / NetBeans / VS Code ---
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+.vscode/
